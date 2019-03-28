@@ -1,0 +1,130 @@
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	background: rgb(70, 29, 29);
+}
+
+a {
+	color: #050000;
+	text-decoration: none;
+}
+
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 2px;
+	font-family: 'Snell Roundhand, cursive';
+	border: 1px solid #000000;
+	position: justify;
+}
+
+.main-nav p {
+	text-align: center;
+	font-family: Copperplate, Copperplate Gothic Light,fantasy;
+	font-weight: 800;
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+.main-nav a {
+	padding: 8px 8px;
+	text-align: center;
+	display: block;
+	font-size: .95em;
+	color: #7e6f6f;
+	text-transform: uppercase;
+	}
+	
+.main-nav a:hover {
+	color: #7e6f6f;
+	background-color: #000000;
+	border-radius: 15px 15px 15px 15px;
+	}
+
+/* HEADER */
+
+.main-header {
+	background: #c43636;
+}
+
+.primary-col {
+	width: 45%;
+	text-align: center;
+	border: 1px solid #000000;
+	border-radius: 15px 15px 15px 15px;
+	margin-left: 25px;
+	}
+
+.secondary-col {
+	width: 45%;
+	text-align: center;
+	border: 1px solid #000000;
+	border-radius: 15px 15px 15px 15px;
+	margin-left: 25px;
+	}
+
+.container {
+	margin: 5px auto;
+	padding: 1px;
+	}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: relative;
+	bottom: 0;
+}
+
+.main-nav,
+.secondary-column {
+	float: right;
+	}
+
+.column-container {
+	display: inline-flex;
+	flex: 1;
+}
+
+.main-nav li {
+	float: left;
+	margin-left: 4px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+ul {
+	list-style-type: none;
+	}
+
+
+.feat-img {
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 15px 15px 15px 15px;
+	border: 1px solid #000000;
+	position: relative;
+}
+	
+
+.banner-img {
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.clearfix:after {
+	display: table;
+	clear: both;
+	}
+
+.card {
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: auto;
+	margin: 5px;
+}
