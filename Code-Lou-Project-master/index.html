@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>DERBY CITY TRANSIT</title>
+	<link rel ="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+			var arr_Images = new Array();   // Array to hold images.
+		
+			// Assigns Image.
+			arr_Images[1] = "img/truck-semi-banner.jpg";
+			arr_Images[2] = "img/sprinter-banner.jpg"
+			arr_Images[3] = "img/transit.jpg"
+		
+			var iSlide;
+			var img_Cnt = arr_Images.length - 1;
+		
+			// Sets Image.
+			var arrLImgCnt = new Array();
+			for (iSlide = 1; iSlide < img_Cnt + 1; iSlide++) {
+				arrLImgCnt[iSlide] = new Image();
+				arrLImgCnt[iSlide].src = arr_Images[iSlide];
+			}
+				
+			// Show Images on click.
+			function showImages(img) {
+				document.images.pb1.src = arrLImgCnt[img].src;
+					
+				for (iSlide = 1; iSlide < img_Cnt + 1; iSlide++) {
+					
+					if (iSlide == img) 
+						document.getElementById(iSlide).style.backgroundColor = "#567DD8";
+					else 
+						document.getElementById(iSlide).style.backgroundColor = "#CCC";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<header class="main-header">
+			<img class="feat-img" src="img/louisvilleskyline.jpg" alt="CITY" style="max-width:100%;">
+				
+				<h1 class="title">DERBY CITY TRANSIT</h1>	
+				
+				<div class="main-nav">
+					
+					<li><a href="pages/form.html">Contact</a></li>
+					<li><a href="pages/louisville.html">Louisville</a></li>
+					<li><a href="pages/nashville.html">Nashville</a></li>
+					<li><a href="pages/indianapolis.html">Indianapolis</a></li>
+					<li><a href="pages/charlotte.html">Charlotte</a></li>
+				</div>	
+		</header>
+
+		<div class="img_container">
+       		<a href="#" rel="">
+            	<img src="img/truck-semi-banner.jpg" id="pb1" alt="Banner" />
+       		</a>
+    	</div>
+
+		<div id="tank">
+			<div class="slidenav">
+				<input type="button" id="1" class="btSld" 
+					style="background-color:#567DD8;"
+					onclick="javascript:showImages(this.id);" />
+				<input type="button" id="2" class="btSld" 
+					onclick="javascript:showImages(this.id);" />
+				<input type="button" id="3" class="btSld" 
+					onclick="javascript:showImages(this.id);" />
+			</div>
+		</div>
+		
+		<div class="container">	
+
+			<div class="column-container row">
+				<div class="col-md-5">
+					<h2>SEMI TRANSIT</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+				   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+				   aboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+				   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+				   aboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+				   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+				   aboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+		
+				<div class="col-md-5">
+					<h2>SPRINTER TRANSIT</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+				    aboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+					aboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+
+			<div class="card-group">
+				<div class="card">
+					<img class="card-img-top" src="img/semi.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+				</div>
+
+				<div class="card">
+					<img class="card-img-top" src="img/sprinter.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+				</div>
+
+				<div class="card">
+					<img class="card-img-top" src="img/van.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<footer> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </footer>	
+	
+	</body>
+
+</html>
